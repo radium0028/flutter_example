@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_example/sentry/view.dart';
+import 'package:flutter_example/generated/l10n.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
+
+import 'pages/intl/view.dart';
+import 'pages/sentry/view.dart';
 
 Future<void> main() async {
   //使用sentry监控所有异常
@@ -34,6 +38,18 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
+      // 国际化配置
+      localizationsDelegates: const [
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+        S.delegate
+      ],
+      // 将en设置为第一项,没有适配语言时,英语为首选项
+      supportedLocales: [
+        const Locale('en', ''),
+        ...S.delegate.supportedLocales
+      ],
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -49,29 +65,31 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const SentryPage(),
-                ),
-              );
-            },
-            child: const Text('Sndtry'),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) => const SentryPage(),
-                ),
-              );
-            },
-            child: const Text('Intl'),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const SentryPage(),
+                  ),
+                );
+              },
+              child: const Text('Sndtry'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const IntlPage(),
+                  ),
+                );
+              },
+              child: const Text('Intl'),
+            ),
+          ],
+        ),
       ),
     );
   }

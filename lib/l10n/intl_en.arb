@@ -1,0 +1,9 @@
+{
+  "name": "Name",
+  "age": "Age",
+  "input": "place input {label}",
+  "todo": "Do what you {todo},{todo} what you do",
+  "getMessageTips": "{howMany, plural, zero{You have no message} one{You have 1 message} other{You have {howMany} messages}}",
+  "gender": "{gender, select, male{Mr {lastName}} female{Ms {lastName} } other{VIP {lastName}}}",
+  "select": "{select, select, option1{{lastName}，select} option2{{lastName}，select} other{{lastName} default select}}"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "姓名",
+  "age": "年龄",
+  "input": "请输入 {label}",
+  "todo": "做你{todo}到的,{todo}你做到的",
+  "getMessageTips": "{howMany, plural, zero{没有消息} one{有1条消息} other{有{howMany}条消息}}",
+  "gender": "{gender, select, male{{lastName}先生} female{{lastName}女士} other{{lastName} 贵宾}}",
+  "select": "{select, select, option1{{lastName}被选择} option2{{lastName}，被选择} other{{lastName} 默认选中}}"
+}
