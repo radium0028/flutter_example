@@ -98,6 +98,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_xupdate:
+    dependency: "direct main"
+    description:
+      name: flutter_xupdate
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.0.2"
   http:
     dependency: transitive
     description:
@@ -155,7 +162,7 @@ packages:
     source: hosted
     version: "1.7.0"
   package_info_plus:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: package_info_plus
       url: "https://pub.flutter-io.cn"
