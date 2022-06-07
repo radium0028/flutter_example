@@ -42,14 +42,14 @@ class MyApp extends StatelessWidget {
         const Locale('en', ''),
         ...S.delegate.supportedLocales
       ],
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
-  MyHomePage({Key? key, required this.title}) : super(key: key);
-  String title;
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
+  final String title;
 
   @override
   Widget build(BuildContext context) {
