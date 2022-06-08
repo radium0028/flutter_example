@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/generated/l10n.dart';
+import 'package:flutter_example/pages/intl/format_page.dart';
 import 'package:flutter_example/pages/xupdate/view.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
@@ -15,7 +16,7 @@ Future<void> main() async {
           'https://dad177183f8a4805ad3188a8e4836807@o1274663.ingest.sentry.io/6469733';
     },
     // Init your App.
-    appRunner: () => runApp(MyApp()),
+    appRunner: () => runApp(const MyApp()),
   );
 }
 
@@ -89,6 +90,16 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: const Text('XUpdate'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const FormatPage(),
+                  ),
+                );
+              },
+              child: const Text('Intl Format'),
             ),
           ],
         ),
