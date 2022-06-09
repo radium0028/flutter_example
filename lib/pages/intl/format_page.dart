@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
+//  import 'package:intl/date_symbol_data_file.dart';
+// import 'package:intl/date_symbol_data_http_request.dart';
 
 class FormatPage extends StatefulWidget {
   const FormatPage({Key? key}) : super(key: key);
@@ -24,15 +26,25 @@ class _FormatPageState extends State<FormatPage> {
     initializeDateFormatting();
 
     NumberFormat nf = NumberFormat("#,###.##");
-    print("#,###.### = ${nf.format(1234567890.09876)}");
+    print("1234567890.123 => #,###.## = ${nf.format(1234567890.123)}");
+    //四舍五入
+    print("1234567890.125 => #,###.## = ${nf.format(1234567890.125)}");
+    print("1234567890.01 => #,###.## = ${nf.format(1234567890.01)}");
+    print("1234567890.09 => #,###.## = ${nf.format(1234567890.09)}");
+    print("1234567890.093 => #,###.## = ${nf.format(1234567890.093)}");
+    //四舍五入后会再次进位
+    print("1234567890.095 => #,###.## = ${nf.format(1234567890.095)}");
+    //使用00就可以保留指定的小数位
     nf = NumberFormat("#,###.00");
-    print("#,###.000 = ${nf.format(1234567890.09876)}");
+    print("#,###.00 = ${nf.format(1234567890.09876)}");
     nf = NumberFormat("#,###.000%");
     print("#,###.000% = ${nf.format(0.09876)}");
     nf = NumberFormat("%#,###.000");
     print("%#,###.000 = ${nf.format(0.09876)}");
     nf = NumberFormat("#,###.000‰");
     print("#,###.000‰ = ${nf.format(0.09876)}");
+    nf = NumberFormat("¤#,###.000");
+    print("¤#,###.000 = ${nf.format(09876)}");
     nf = NumberFormat("¤#,###.000", "ZH");
     print("¤#,###.000 = ${nf.format(09876)}");
     DateTime now = DateTime.now();
