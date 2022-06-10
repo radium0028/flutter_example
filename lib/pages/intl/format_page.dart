@@ -48,6 +48,50 @@ class _FormatPageState extends State<FormatPage> {
     nf = NumberFormat("¤#,###.000", "ZH");
     print("¤#,###.000 = ${nf.format(09876)}");
     DateTime now = DateTime.now();
+
+    print("===============进位的奇怪问题================");
+    //在保留1位小数时，需要大于5才进位。
+    nf = NumberFormat("#.#");
+    print("nf.format(1.11)${nf.format(1.11)}");
+    print("nf.format(1.12)${nf.format(1.12)}");
+    print("nf.format(1.13)${nf.format(1.13)}");
+    print("nf.format(1.14)${nf.format(1.14)}");
+    print("nf.format(1.15)${nf.format(1.15)}");
+    print("nf.format(1.16)${nf.format(1.16)}");
+    print("nf.format(1.17)${nf.format(1.17)}");
+    print("nf.format(1.18)${nf.format(1.18)}");
+    // //在保留2位小数时，采用四舍五入的原则进位
+    nf = NumberFormat("#.##");
+    print("nf.format(1.111)${nf.format(1.111)}");
+    print("nf.format(1.112)${nf.format(1.112)}");
+    print("nf.format(1.113)${nf.format(1.113)}");
+    print("nf.format(1.114)${nf.format(1.114)}");
+    print("nf.format(1.115)${nf.format(1.115)}");
+    print("nf.format(1.116)${nf.format(1.116)}");
+    print("nf.format(1.117)${nf.format(1.117)}");
+    print("nf.format(1.118)${nf.format(1.118)}");
+    // //需要大于5才进位
+    nf = NumberFormat("#.###");
+    print("nf.format(1.1111)${nf.format(1.1111)}");
+    print("nf.format(1.1112)${nf.format(1.1112)}");
+    print("nf.format(1.1113)${nf.format(1.1113)}");
+    print("nf.format(1.1114)${nf.format(1.1114)}");
+    print("nf.format(1.1115)${nf.format(1.1115)}");
+    print("nf.format(1.1116)${nf.format(1.1116)}");
+    print("nf.format(1.1117)${nf.format(1.1117)}");
+    print("nf.format(1.1118)${nf.format(1.1118)}");
+    // //四舍五入
+    nf = NumberFormat("#.####");
+    print("nf.format(1.11111)${nf.format(1.11111)}");
+    print("nf.format(1.11112)${nf.format(1.11112)}");
+    print("nf.format(1.11113)${nf.format(1.11113)}");
+    print("nf.format(1.11114)${nf.format(1.11114)}");
+    print("nf.format(1.11115)${nf.format(1.11115)}");
+    print("nf.format(1.11116)${nf.format(1.11116)}");
+    print("nf.format(1.11117)${nf.format(1.11117)}");
+    print("nf.format(1.11118)${nf.format(1.11118)}");
+    print("===============进位的奇怪问题================");
+
     print("===============默认环境的输出================");
     //打印当天的年份
     print("当天年份(y)：${DateFormat.y().format(now)}");
