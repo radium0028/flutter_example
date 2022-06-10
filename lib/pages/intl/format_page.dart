@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
+import 'package:flutter_example/generated/l10n.dart';
 import 'package:intl/intl.dart';
 import 'package:intl/date_symbol_data_local.dart';
 //  import 'package:intl/date_symbol_data_file.dart';
@@ -24,17 +25,17 @@ class _FormatPageState extends State<FormatPage> {
     super.reassemble();
     //加载所有日期格式
     initializeDateFormatting();
+    //设置默认的环境为英文
+    setState(
+      () {
+        //手动切换中文
+        S.load(const Locale("en"));
+      },
+    );
 
     NumberFormat nf = NumberFormat("#,###.##");
     print("1234567890.123 => #,###.## = ${nf.format(1234567890.123)}");
-    //四舍五入
-    print("1234567890.125 => #,###.## = ${nf.format(1234567890.125)}");
-    print("1234567890.01 => #,###.## = ${nf.format(1234567890.01)}");
-    print("1234567890.09 => #,###.## = ${nf.format(1234567890.09)}");
-    print("1234567890.093 => #,###.## = ${nf.format(1234567890.093)}");
-    //四舍五入后会再次进位
-    print("1234567890.095 => #,###.## = ${nf.format(1234567890.095)}");
-    //使用00就可以保留指定的小数位
+    //?使用00就可以保留指定的小数位
     nf = NumberFormat("#,###.00");
     print("#,###.00 = ${nf.format(1234567890.09876)}");
     nf = NumberFormat("#,###.000%");
@@ -43,56 +44,24 @@ class _FormatPageState extends State<FormatPage> {
     print("%#,###.000 = ${nf.format(0.09876)}");
     nf = NumberFormat("#,###.000‰");
     print("#,###.000‰ = ${nf.format(0.09876)}");
+    //? 只能显示货币的名称，不能显示符号。
     nf = NumberFormat("¤#,###.000");
     print("¤#,###.000 = ${nf.format(09876)}");
     nf = NumberFormat("¤#,###.000", "ZH");
     print("¤#,###.000 = ${nf.format(09876)}");
-    DateTime now = DateTime.now();
 
-    print("===============进位的奇怪问题================");
-    //在保留1位小数时，需要大于5才进位。
+    print("===============进位使用银行家舍入法================");
+    //! 银行家舍入法
+    //!四舍六入五考虑，五后非零就进一，五后为零看奇偶，五前为偶应舍去，五前为奇要进一。
     nf = NumberFormat("#.#");
-    print("nf.format(1.11)${nf.format(1.11)}");
-    print("nf.format(1.12)${nf.format(1.12)}");
-    print("nf.format(1.13)${nf.format(1.13)}");
-    print("nf.format(1.14)${nf.format(1.14)}");
-    print("nf.format(1.15)${nf.format(1.15)}");
-    print("nf.format(1.16)${nf.format(1.16)}");
-    print("nf.format(1.17)${nf.format(1.17)}");
-    print("nf.format(1.18)${nf.format(1.18)}");
-    // //在保留2位小数时，采用四舍五入的原则进位
-    nf = NumberFormat("#.##");
-    print("nf.format(1.111)${nf.format(1.111)}");
-    print("nf.format(1.112)${nf.format(1.112)}");
-    print("nf.format(1.113)${nf.format(1.113)}");
-    print("nf.format(1.114)${nf.format(1.114)}");
-    print("nf.format(1.115)${nf.format(1.115)}");
-    print("nf.format(1.116)${nf.format(1.116)}");
-    print("nf.format(1.117)${nf.format(1.117)}");
-    print("nf.format(1.118)${nf.format(1.118)}");
-    // //需要大于5才进位
-    nf = NumberFormat("#.###");
-    print("nf.format(1.1111)${nf.format(1.1111)}");
-    print("nf.format(1.1112)${nf.format(1.1112)}");
-    print("nf.format(1.1113)${nf.format(1.1113)}");
-    print("nf.format(1.1114)${nf.format(1.1114)}");
-    print("nf.format(1.1115)${nf.format(1.1115)}");
-    print("nf.format(1.1116)${nf.format(1.1116)}");
-    print("nf.format(1.1117)${nf.format(1.1117)}");
-    print("nf.format(1.1118)${nf.format(1.1118)}");
-    // //四舍五入
-    nf = NumberFormat("#.####");
-    print("nf.format(1.11111)${nf.format(1.11111)}");
-    print("nf.format(1.11112)${nf.format(1.11112)}");
-    print("nf.format(1.11113)${nf.format(1.11113)}");
-    print("nf.format(1.11114)${nf.format(1.11114)}");
-    print("nf.format(1.11115)${nf.format(1.11115)}");
-    print("nf.format(1.11116)${nf.format(1.11116)}");
-    print("nf.format(1.11117)${nf.format(1.11117)}");
-    print("nf.format(1.11118)${nf.format(1.11118)}");
-    print("===============进位的奇怪问题================");
-
+    print("1.14，四舍${nf.format(1.14)}");
+    print("1.16，六入${nf.format(1.16)}");
+    print("1.151，五后非零就进一)${nf.format(1.151)}");
+    print("1.15，五后为零看奇偶，五前为奇要进一${nf.format(1.15)}");
+    print("1.25，五后为零看奇偶，五前为偶应舍去${nf.format(1.25)}");
     print("===============默认环境的输出================");
+    DateTime now = DateTime.now();
+    print(Intl.defaultLocale);
     //打印当天的年份
     print("当天年份(y)：${DateFormat.y().format(now)}");
     //打印当天的月份
@@ -138,7 +107,7 @@ class _FormatPageState extends State<FormatPage> {
     print("yMMMMd()：${DateFormat.yMMMMd("zh").format(now)}");
     print("yMd()：${DateFormat.yMd("zh").format(now)}");
     print(DateFormat.jm("zh").format(now));
-    print(DateFormat.j("zh").format(now));
+    print(DateFormat.EEEE().format(now));
     print(DateFormat.jms("zh").format(now));
     print(DateFormat.Hm("zh").format(now));
     print("yM()：${DateFormat.yM("zh").add_Hm().format(now)}");
