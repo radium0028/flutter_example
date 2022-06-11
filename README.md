@@ -1,16 +1,16 @@
 # flutter_example
 
-A new Flutter project.
+这里是我测试flutter插件的例子，根据个人使用会陆续更新，配套有文章和视频的介绍。
 
-## Getting Started
+### 运行环境：
+```
+Flutter 3.0.1
+Dart 2.17.1
+DevTools 2.12.2
+```
 
-This project is a starting point for a Flutter application.
+### 文章介绍查看掘金
+https://juejin.cn/user/3505696643488151
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 视频介绍查看哔哩哔哩
+https://space.bilibili.com/1159595523/
