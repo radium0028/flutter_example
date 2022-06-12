@@ -42,6 +42,8 @@ dependencies:
   flutter_xupdate: ^2.0.2
   # 获取版本号等信息
   package_info_plus: ^1.4.2
+  # 磁盘缓存，共享数据
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:

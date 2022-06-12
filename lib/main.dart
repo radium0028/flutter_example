@@ -7,6 +7,7 @@ import 'package:sentry_flutter/sentry_flutter.dart';
 
 import 'pages/intl/view.dart';
 import 'pages/sentry/view.dart';
+import 'pages/shared_preferences/view.dart';
 
 Future<void> main() async {
   //使用sentry监控所有异常
@@ -63,6 +64,7 @@ class MyHomePage extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
+                //跳转到SentryPage页面
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const SentryPage(),
@@ -73,6 +75,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
+                //跳转到IntlPage页面
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const IntlPage(),
@@ -83,6 +86,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
+                //跳转到XUpdatePage页面
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const XUpdatePage(),
@@ -93,6 +97,7 @@ class MyHomePage extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: () {
+                //跳转到FormatPage页面
                 Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => const FormatPage(),
@@ -101,6 +106,16 @@ class MyHomePage extends StatelessWidget {
               },
               child: const Text('Intl Format'),
             ),
+            ElevatedButton(
+                onPressed: () {
+                  //跳转到SharedPreferences页面
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const SharedPage(),
+                    ),
+                  );
+                },
+                child: const Text("SharedPreferences")),
           ],
         ),
       ),
