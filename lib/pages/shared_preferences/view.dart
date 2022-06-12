@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/pages/shared_preferences/read_view.dart';
+import 'package:flutter_example/pages/shared_preferences/shared_service_example.dart';
 import 'package:flutter_example/pages/shared_preferences/user.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -105,6 +106,17 @@ class _ViewState extends State<SharedPage> {
               child: const Text('重新加载所有数据'),
             ),
             const Divider(),
+            ElevatedButton(
+              onPressed: () {
+                //去封装演示页面
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const SharedServiceExample(),
+                  ),
+                );
+              },
+              child: const Text('去封装演示页面'),
+            ),
           ],
         ),
       ),
