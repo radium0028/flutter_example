@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/pages/shared_preferences/read_view.dart';
+import 'package:flutter_example/pages/shared_preferences/user.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPage extends StatefulWidget {
@@ -16,6 +17,7 @@ class _ViewState extends State<SharedPage> {
   }
 
   SharedPreferences? _prefs;
+  User? _user;
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +31,9 @@ class _ViewState extends State<SharedPage> {
             ElevatedButton(
               onPressed: () async {
                 _prefs = await SharedPreferences.getInstance();
+                // 读取user字符串，序列化成对象
+                _user = User.fromJson(_prefs?.getString("user") ?? "");
+                setState(() {});
               },
               child: const Text('初始SharedPreferences'),
             ),
@@ -39,6 +44,7 @@ class _ViewState extends State<SharedPage> {
                 _prefs?.setBool("bool", true);
                 _prefs?.setDouble("double", 1.0);
                 _prefs?.setStringList("stringList", ["第一个字符串", "第二个字符串"]);
+                _prefs?.setString("user", '{"name": "张三2", "age": 18}');
                 setState(() {});
               },
               child: const Text('写入数据'),
@@ -48,6 +54,7 @@ class _ViewState extends State<SharedPage> {
             Text('bool: ${_prefs?.getBool("bool")}'),
             Text('double: ${_prefs?.getDouble("double")}'),
             Text('stringList: ${_prefs?.getStringList("stringList")}'),
+            Text('用户姓名: ${_user?.name}'),
             ElevatedButton(
               onPressed: () {
                 //跳转到SharedReadView页面
@@ -62,7 +69,6 @@ class _ViewState extends State<SharedPage> {
             const Divider(),
             ElevatedButton(
               onPressed: () {
-                print("====");
                 _prefs?.getKeys().forEach((element) {
                   print(element);
                 });
@@ -98,6 +104,7 @@ class _ViewState extends State<SharedPage> {
               },
               child: const Text('重新加载所有数据'),
             ),
+            const Divider(),
           ],
         ),
       ),

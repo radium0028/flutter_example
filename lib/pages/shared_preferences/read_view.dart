@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_example/pages/shared_preferences/user.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedReadView extends StatefulWidget {
@@ -37,6 +38,8 @@ class _ReadViewState extends State<SharedReadView> {
             Text('bool: ${_prefs?.getBool("bool")}'),
             Text('double: ${_prefs?.getDouble("double")}'),
             Text('stringList: ${_prefs?.getStringList("stringList")}'),
+            Text(
+                'user name: ${User.fromJson(_prefs?.getString('user') ?? '').name}'),
           ],
         ),
       ),
