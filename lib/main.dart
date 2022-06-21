@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/generated/l10n.dart';
+import 'package:flutter_example/pages/getwidget/view.dart';
 import 'package:flutter_example/pages/intl/format_page.dart';
 import 'package:flutter_example/pages/xupdate/view.dart';
 import 'package:flutter_example/util/shared_service.dart';
@@ -113,15 +114,16 @@ class MyHomePage extends StatelessWidget {
               child: const Text('Intl Format'),
             ),
             ElevatedButton(
-                onPressed: () {
-                  //跳转到SharedPreferences页面
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => const SharedPage(),
-                    ),
-                  );
-                },
-                child: const Text("SharedPreferences")),
+              onPressed: () {
+                //跳转到SharedPreferences页面
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const GetWidgetPage(),
+                  ),
+                );
+              },
+              child: const Text("GetWidget演示"),
+            ),
           ],
         ),
       ),

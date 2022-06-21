@@ -45,6 +45,9 @@ dependencies:
   # 磁盘缓存，共享数据
   shared_preferences: ^2.0.15
 
+  #UI库
+  getwidget: ^3.0.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
