@@ -53,9 +53,9 @@ class _SharedServiceExampleState extends State<SharedServiceExample> {
             Text(
               SharedService.get("service_map")?.toString() ?? "null",
             ),
-            Text(
-              (SharedService.get("service_map") as Map)["a"],
-            ),
+            // Text(
+            //   (SharedService.get("service_map") as Map)["a"],
+            // ),
           ],
         ),
       ),

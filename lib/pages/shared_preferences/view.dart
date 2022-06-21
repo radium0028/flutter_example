@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_example/pages/shared_preferences/read_view.dart';
-import 'package:flutter_example/pages/shared_preferences/shared_service_example.dart';
+import 'package:flutter_example/global_widgets/link_button.dart';
 import 'package:flutter_example/pages/shared_preferences/user.dart';
+import 'package:flutter_example/routes/pages.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPage extends StatefulWidget {
@@ -56,17 +56,7 @@ class _ViewState extends State<SharedPage> {
             Text('double: ${_prefs?.getDouble("double")}'),
             Text('stringList: ${_prefs?.getStringList("stringList")}'),
             Text('用户姓名: ${_user?.name}'),
-            ElevatedButton(
-              onPressed: () {
-                //跳转到SharedReadView页面
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const SharedReadView(),
-                  ),
-                );
-              },
-              child: const Text('去读取界面'),
-            ),
+            LinkButtonWidget("去读取页面", Routes.SHARED + Routes.SHARED_READ),
             const Divider(),
             ElevatedButton(
               onPressed: () {
@@ -106,16 +96,9 @@ class _ViewState extends State<SharedPage> {
               child: const Text('重新加载所有数据'),
             ),
             const Divider(),
-            ElevatedButton(
-              onPressed: () {
-                //去封装演示页面
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => const SharedServiceExample(),
-                  ),
-                );
-              },
-              child: const Text('去封装演示页面'),
+            LinkButtonWidget(
+              "去封装的演示页面",
+              Routes.SHARED + Routes.SHARED_SERVICE,
             ),
           ],
         ),
