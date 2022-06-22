@@ -1,6 +1,6 @@
 library pages;
 
-export 'getwidget/view.dart';
+export 'getwidget/index.dart';
 export 'intl/view.dart';
 export 'intl/format_page.dart';
 export 'sentry/view.dart';

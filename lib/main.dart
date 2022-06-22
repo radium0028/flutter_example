@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/generated/l10n.dart';
-import 'package:flutter_example/pages/getwidget/view.dart';
+import 'package:flutter_example/pages/getwidget/main.dart';
 import 'package:flutter_example/pages/index.dart';
 import 'package:flutter_example/pages/intl/format_page.dart';
 import 'package:flutter_example/pages/xupdate/view.dart';

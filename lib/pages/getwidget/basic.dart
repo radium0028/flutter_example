@@ -3,14 +3,14 @@
 import 'package:flutter/material.dart';
 import 'package:getwidget/getwidget.dart';
 
-class GetWidgetPage extends StatefulWidget {
-  const GetWidgetPage({Key? key}) : super(key: key);
+class BasicPage extends StatefulWidget {
+  const BasicPage({Key? key}) : super(key: key);
 
   @override
   _ViewState createState() => _ViewState();
 }
 
-class _ViewState extends State<GetWidgetPage> {
+class _ViewState extends State<BasicPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

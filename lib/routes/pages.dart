@@ -43,6 +43,12 @@ abstract class AppPages {
     GetPage(
       name: Routes.GETWIDGET,
       page: () => const GetWidgetPage(),
+      children: [
+        GetPage(
+          name: Routes.GETWIDGET_BUTTON,
+          page: () => ButtonPage(),
+        ),
+      ],
     ),
   ];
 }

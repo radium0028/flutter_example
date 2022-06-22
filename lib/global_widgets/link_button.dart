@@ -9,11 +9,17 @@ class LinkButtonWidget extends GetView {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      onPressed: () {
-        Get.toNamed(route);
-      },
-      child: Text(lable),
+    return Container(
+      margin: const EdgeInsets.all(3),
+      child: ElevatedButton(
+        onPressed: () {
+          Get.toNamed(route);
+        },
+        child: Text(
+          lable,
+          overflow: TextOverflow.ellipsis,
+        ),
+      ),
     );
   }
 }
