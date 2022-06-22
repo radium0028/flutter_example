@@ -34,6 +34,9 @@ Future<void> main() async {
       getPages: AppPages.pages,
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        iconTheme: const IconThemeData(
+          color: Colors.white,
+        ),
       ),
       // 国际化配置
       localizationsDelegates: const [

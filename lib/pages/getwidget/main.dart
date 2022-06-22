@@ -26,6 +26,10 @@ class _ViewState extends State<GetWidgetPage> {
         childAspectRatio: 1 / 0.3, //宽高比
         children: [
           LinkButtonWidget(
+            "基本样式",
+            Routes.GETWIDGET + Routes.GETWIDGET_BASIC,
+          ),
+          LinkButtonWidget(
               "按钮Button", Routes.GETWIDGET + Routes.GETWIDGET_BUTTON),
           LinkButtonWidget(
               "徽章Badge", Routes.GETWIDGET + Routes.GETWIDGET_BADGE),

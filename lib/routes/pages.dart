@@ -45,6 +45,10 @@ abstract class AppPages {
       page: () => const GetWidgetPage(),
       children: [
         GetPage(
+          name: Routes.GETWIDGET_BASIC,
+          page: () => BasicPage(),
+        ),
+        GetPage(
           name: Routes.GETWIDGET_BUTTON,
           page: () => ButtonPage(),
         ),

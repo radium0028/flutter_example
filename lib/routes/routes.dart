@@ -14,6 +14,7 @@ abstract class Routes {
 
   ///GETWIDGET
   static const GETWIDGET = '/getwidget';
+  static const GETWIDGET_BASIC = '/basic';
   static const GETWIDGET_BUTTON = '/button';
   static const GETWIDGET_BADGE = '/badge';
   static const GETWIDGET_AVATAR = '/avatar';
