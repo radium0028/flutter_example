@@ -46,7 +46,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_IMAGE,
           ),
           LinkButtonWidget(
-            enable: false,
             "卡片Card",
             Routes.GETWIDGET + Routes.GETWIDGET_CARD,
           ),

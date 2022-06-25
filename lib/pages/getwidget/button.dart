@@ -243,8 +243,8 @@ class ButtonPage extends GetView {
                 button4(),
                 const Divider(),
                 GFButtonBar(
-                  direction: Axis.vertical,
-                  spacing: 70.0,
+                  direction: Axis.horizontal,
+                  spacing: 10.0,
                   children: [
                     GFButton(
                       onPressed: () {},

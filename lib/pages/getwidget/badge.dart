@@ -61,13 +61,16 @@ class BadgePage extends GetView {
               GFBadge(
                 text: "1",
                 shape: GFBadgeShape.circle,
-                color: GFColors.SUCCESS,
+                color: GFColors.INFO,
                 size: GFSize.LARGE,
               ),
+              // 文字颜色需要单独设置，不能使用textStyle的color属性
               GFBadge(
                 text: "1",
+                textStyle: TextStyle(color: Colors.red),
+                textColor: Colors.black87,
                 shape: GFBadgeShape.circle,
-                color: GFColors.SUCCESS,
+                color: GFColors.TRANSPARENT,
                 size: 50,
               ),
               Divider(),
