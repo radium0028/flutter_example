@@ -42,7 +42,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_AVATAR,
           ),
           LinkButtonWidget(
-            enable: false,
             "图片Image",
             Routes.GETWIDGET + Routes.GETWIDGET_IMAGE,
           ),

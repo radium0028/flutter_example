@@ -18,29 +18,29 @@ class AvatarPage extends GetView {
             spacing: 10.0,
             children: const [
               GFAvatar(
-                backgroundImage: AssetImage('assset/1.png'),
+                backgroundImage: AssetImage('assets/avatar.png'),
               ),
               GFAvatar(
-                backgroundImage: AssetImage('assset/1.png'),
+                backgroundImage: AssetImage('assets/avatar.png'),
                 shape: GFAvatarShape.square,
               ),
               GFAvatar(
-                backgroundImage: AssetImage('assset/1.png'),
+                backgroundImage: AssetImage('assets/avatar.png'),
                 shape: GFAvatarShape.standard,
               ),
               Divider(),
               GFAvatar(
                 size: GFSize.LARGE,
-                backgroundImage: AssetImage('assset/1.png'),
+                backgroundImage: AssetImage('assets/avatar.png'),
               ),
               Divider(),
               GFAvatar(
                 size: 100.0,
-                backgroundImage: AssetImage('assset/1.png'),
+                backgroundImage: AssetImage('assets/avatar.png'),
               ),
               GFAvatar(
                 radius: 100.0,
-                backgroundImage: AssetImage('assset/1.png'),
+                backgroundImage: AssetImage('assets/avatar.png'),
               ),
             ],
           ),
