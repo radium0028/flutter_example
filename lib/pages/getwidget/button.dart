@@ -224,7 +224,7 @@ class ButtonPage extends GetView {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('ButtonPage')),
+      appBar: AppBar(title: const Text('ButtonPage')),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -241,12 +241,23 @@ class ButtonPage extends GetView {
                 button3(),
                 const Text('图标按钮'),
                 button4(),
+                const Divider(),
                 GFButtonBar(
+                  direction: Axis.vertical,
+                  spacing: 70.0,
                   children: [
                     GFButton(
                       onPressed: () {},
-                      text: 'Button',
-                    )
+                      text: 'Button1',
+                    ),
+                    GFButton(
+                      onPressed: () {},
+                      text: 'Button2',
+                    ),
+                    GFButton(
+                      onPressed: () {},
+                      text: 'Button3',
+                    ),
                   ],
                 ),
               ],
