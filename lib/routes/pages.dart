@@ -1,3 +1,4 @@
+import 'package:flutter_example/pages/getwidget/avatar.dart';
 import 'package:flutter_example/pages/index.dart';
 import 'package:get/get.dart';
 part './routes.dart';
@@ -55,6 +56,10 @@ abstract class AppPages {
         GetPage(
           name: Routes.GETWIDGET_BADGE,
           page: () => BadgePage(),
+        ),
+        GetPage(
+          name: Routes.GETWIDGET_AVATAR,
+          page: () => AvatarPage(),
         ),
       ],
     ),

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
@@ -14,7 +16,7 @@ class BadgePage extends GetView {
           padding: const EdgeInsets.all(8.0),
           child: Wrap(
             spacing: 5.0,
-            children: const [
+            children: [
               GFBadge(
                 text: "12",
               ),
@@ -79,6 +81,59 @@ class BadgePage extends GetView {
                     color: Colors.blue,
                     width: 3.0,
                   ),
+                ),
+              ),
+              Divider(),
+              GFButton(
+                onPressed: () {},
+                text: "Button",
+                icon: GFBadge(
+                  text: '2',
+                ),
+              ),
+              GFButton(
+                onPressed: () {},
+                text: "Button",
+                position: GFPosition.end,
+                icon: GFBadge(
+                  text: '2',
+                ),
+              ),
+              GFButtonBadge(
+                onPressed: () {},
+                text: "Button2",
+                icon: GFBadge(
+                  text: '2',
+                ),
+              ),
+              Divider(),
+              GFIconBadge(
+                child: GFButton(
+                  onPressed: () {},
+                  text: "有新消息",
+                ),
+                counterChild: GFBadge(
+                  shape: GFBadgeShape.circle,
+                ),
+              ),
+              GFIconBadge(
+                child: GFButton(
+                  onPressed: () {},
+                  text: "有新消息",
+                ),
+                position: GFBadgePosition.bottomEnd(),
+                counterChild: GFBadge(
+                  shape: GFBadgeShape.circle,
+                ),
+              ),
+              GFIconBadge(
+                child: GFButton(
+                  onPressed: () {},
+                  text: "有新消息",
+                ),
+                position: GFBadgePosition(top: 3, end: -5),
+                counterChild: GFBadge(
+                  shape: GFBadgeShape.circle,
                 ),
               ),
             ],
