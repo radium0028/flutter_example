@@ -241,6 +241,14 @@ class ButtonPage extends GetView {
                 button3(),
                 const Text('图标按钮'),
                 button4(),
+                GFButtonBar(
+                  children: [
+                    GFButton(
+                      onPressed: () {},
+                      text: 'Button',
+                    )
+                  ],
+                ),
               ],
             ),
           ),

@@ -52,6 +52,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_BUTTON,
           page: () => ButtonPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_BADGE,
+          page: () => BadgePage(),
+        ),
       ],
     ),
   ];
