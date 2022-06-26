@@ -37,6 +37,8 @@ Future<void> main() async {
         iconTheme: const IconThemeData(
           color: Colors.white,
         ),
+        backgroundColor: const Color.fromARGB(238, 238, 238, 238),
+        scaffoldBackgroundColor: const Color.fromARGB(238, 238, 238, 238),
       ),
       // 国际化配置
       localizationsDelegates: const [
