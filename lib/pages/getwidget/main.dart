@@ -59,7 +59,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_TILE,
           ),
           LinkButtonWidget(
-            enable: false,
             "选项卡Tab",
             Routes.GETWIDGET + Routes.GETWIDGET_TAB,
           ),

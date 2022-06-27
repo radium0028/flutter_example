@@ -80,6 +80,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_TILE,
           page: () => const TilePage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_TAB,
+          page: () => TabPage(),
+        ),
       ],
     ),
   ];
