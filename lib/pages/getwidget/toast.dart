@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_example/global_widgets/title.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 
@@ -45,16 +46,7 @@ class ToastPage extends GetView {
               spacing: 8.0,
               runSpacing: 8.0,
               children: [
-                const GFListTile(
-                  titleText: "Toast演示",
-                  subTitle: Text(
-                    "————",
-                    style: TextStyle(
-                      color: GFColors.SUCCESS,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                ),
+                const MyTitle('Toast演示'),
                 GFButton(
                     onPressed: () {
                       GFToast.showToast(
@@ -71,16 +63,7 @@ class ToastPage extends GetView {
                       );
                     },
                     text: "多行内容显示"),
-                const GFListTile(
-                  titleText: "不同位置展示",
-                  subTitle: Text(
-                    "————",
-                    style: TextStyle(
-                      color: GFColors.SUCCESS,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                ),
+                const MyTitle('不同位置展示'),
                 ...GFToastPosition.values.map(
                   (e) => GFButton(
                       onPressed: () {
@@ -88,16 +71,7 @@ class ToastPage extends GetView {
                       },
                       text: "${e.name}"),
                 ),
-                const GFListTile(
-                  titleText: "不同位置展示",
-                  subTitle: Text(
-                    "————",
-                    style: TextStyle(
-                      color: GFColors.SUCCESS,
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                ),
+                const MyTitle('自定义样式'),
                 GFButton(
                     onPressed: () {
                       GFToast.showToast(
