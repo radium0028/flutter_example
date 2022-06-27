@@ -50,7 +50,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_CARD,
           ),
           LinkButtonWidget(
-            enable: false,
             "旋转木马Carousel",
             Routes.GETWIDGET + Routes.GETWIDGET_CAROUSEL,
           ),

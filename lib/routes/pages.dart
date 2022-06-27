@@ -1,5 +1,4 @@
 import 'package:flutter_example/pages/getwidget/avatar.dart';
-import 'package:flutter_example/pages/getwidget/border.dart';
 import 'package:flutter_example/pages/getwidget/card.dart';
 import 'package:flutter_example/pages/getwidget/image.dart';
 import 'package:flutter_example/pages/index.dart';
@@ -95,6 +94,10 @@ abstract class AppPages {
         GetPage(
           name: Routes.GETWIDGET_TOGGLE,
           page: () => const TogglePage(),
+        ),
+        GetPage(
+          name: Routes.GETWIDGET_CAROUSEL,
+          page: () => CarouselPage(),
         ),
       ],
     ),

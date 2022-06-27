@@ -10,3 +10,4 @@ export 'tab.dart';
 export 'floating.dart';
 export 'toast.dart';
 export 'toggle.dart';
+export 'carousel.dart';
