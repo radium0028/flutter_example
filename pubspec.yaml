@@ -73,6 +73,7 @@ flutter:
   assets:
     - assets/avatar.png
     - assets/background.png
+    - assets/handle.png
     - assets/images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
