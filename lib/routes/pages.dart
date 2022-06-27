@@ -76,6 +76,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_CARD,
           page: () => const CardPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_TILE,
+          page: () => const TilePage(),
+        ),
       ],
     ),
   ];

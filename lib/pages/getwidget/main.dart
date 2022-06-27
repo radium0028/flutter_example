@@ -55,7 +55,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_CAROUSEL,
           ),
           LinkButtonWidget(
-            enable: false,
             "标题Tile",
             Routes.GETWIDGET + Routes.GETWIDGET_TILE,
           ),
