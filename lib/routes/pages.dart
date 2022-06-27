@@ -88,6 +88,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_FLOATING,
           page: () => const FloatingPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_TOAST,
+          page: () => const ToastPage(),
+        ),
       ],
     ),
   ];
