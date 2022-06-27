@@ -84,6 +84,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_TAB,
           page: () => TabPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_FLOATING,
+          page: () => const FloatingPage(),
+        ),
       ],
     ),
   ];

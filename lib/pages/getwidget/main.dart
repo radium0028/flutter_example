@@ -63,9 +63,7 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_TAB,
           ),
           LinkButtonWidget(
-              enable: false,
-              "浮动组件Floating",
-              Routes.GETWIDGET + Routes.GETWIDGET_FLOATING),
+              "浮动组件Floating", Routes.GETWIDGET + Routes.GETWIDGET_FLOATING),
           LinkButtonWidget(
             enable: false,
             "Toast",
