@@ -12,7 +12,7 @@ class MyTitle extends GetView {
     return GFListTile(
       titleText: lable,
       subTitle: const Text(
-        "————",
+        "———",
         style: TextStyle(
           color: GFColors.SUCCESS,
           fontWeight: FontWeight.w900,

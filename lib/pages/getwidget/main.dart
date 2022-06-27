@@ -69,7 +69,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_TOAST,
           ),
           LinkButtonWidget(
-            enable: false,
             "切换按钮Toggle",
             Routes.GETWIDGET + Routes.GETWIDGET_TOGGLE,
           ),

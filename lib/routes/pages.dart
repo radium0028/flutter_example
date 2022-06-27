@@ -92,6 +92,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_TOAST,
           page: () => const ToastPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_TOGGLE,
+          page: () => const TogglePage(),
+        ),
       ],
     ),
   ];
