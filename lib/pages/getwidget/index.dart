@@ -11,3 +11,6 @@ export 'floating.dart';
 export 'toast.dart';
 export 'toggle.dart';
 export 'carousel.dart';
+export 'avatar.dart';
+export 'card.dart';
+export 'image.dart';

@@ -1,6 +1,3 @@
-import 'package:flutter_example/pages/getwidget/avatar.dart';
-import 'package:flutter_example/pages/getwidget/card.dart';
-import 'package:flutter_example/pages/getwidget/image.dart';
 import 'package:flutter_example/pages/index.dart';
 import 'package:get/get.dart';
 part './routes.dart';
