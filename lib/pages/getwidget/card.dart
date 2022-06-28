@@ -11,6 +11,7 @@ class CardPage extends GetView {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(238, 238, 238, 238),
       appBar: AppBar(title: const Text('Card 演示')),
       body: SafeArea(
         child: SingleChildScrollView(

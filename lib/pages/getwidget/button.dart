@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_example/global_widgets/title.dart';
 import 'package:get/get.dart';
 import 'package:getwidget/getwidget.dart';
 
@@ -231,15 +232,19 @@ class ButtonPage extends GetView {
             padding: const EdgeInsets.all(8.0),
             child: Column(
               children: [
-                const Text('按钮演示'),
+                const MyTitle('按钮演示'),
                 button(),
-                const Text('按钮类型'),
+                const Divider(),
+                const MyTitle('按钮类型'),
                 button1(),
-                const Text('按钮形状'),
+                const Divider(),
+                const MyTitle('按钮形状'),
                 button2(),
-                const Text('按钮大小'),
+                const Divider(),
+                const MyTitle('按钮大小'),
                 button3(),
-                const Text('图标按钮'),
+                const Divider(),
+                const MyTitle('图标按钮'),
                 button4(),
                 const Divider(),
                 GFButtonBar(
