@@ -77,7 +77,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_DRAWER,
           ),
           LinkButtonWidget(
-            enable: false,
             "手风琴Accordion",
             Routes.GETWIDGET + Routes.GETWIDGET_ACCORDION,
           ),

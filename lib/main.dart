@@ -35,7 +35,7 @@ Future<void> main() async {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         iconTheme: const IconThemeData(
-          color: Colors.white,
+          color: Colors.black,
         ),
         scaffoldBackgroundColor: const Color.fromARGB(250, 250, 250, 250),
       ),

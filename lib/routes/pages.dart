@@ -46,7 +46,7 @@ abstract class AppPages {
       children: [
         GetPage(
           name: Routes.GETWIDGET_BASIC,
-          page: () => BasicPage(),
+          page: () => const BasicPage(),
         ),
         GetPage(
           name: Routes.GETWIDGET_BUTTON,
@@ -95,6 +95,10 @@ abstract class AppPages {
         GetPage(
           name: Routes.GETWIDGET_CAROUSEL,
           page: () => CarouselPage(),
+        ),
+        GetPage(
+          name: Routes.GETWIDGET_ACCORDION,
+          page: () => AccordionPage(),
         ),
       ],
     ),
