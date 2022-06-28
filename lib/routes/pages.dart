@@ -1,3 +1,4 @@
+import 'package:flutter_example/pages/getwidget/typography.dart';
 import 'package:flutter_example/pages/index.dart';
 import 'package:get/get.dart';
 part './routes.dart';
@@ -99,6 +100,10 @@ abstract class AppPages {
         GetPage(
           name: Routes.GETWIDGET_ACCORDION,
           page: () => AccordionPage(),
+        ),
+        GetPage(
+          name: Routes.GETWIDGET_TYPOGRAPHY,
+          page: () => const TypographyPage(),
         ),
       ],
     ),
