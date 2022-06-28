@@ -72,7 +72,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_TOGGLE,
           ),
           LinkButtonWidget(
-            enable: false,
             "抽屉Drawer",
             Routes.GETWIDGET + Routes.GETWIDGET_DRAWER,
           ),

@@ -105,6 +105,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_TYPOGRAPHY,
           page: () => const TypographyPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_DRAWER,
+          page: () => const DrawerPage(),
+        ),
       ],
     ),
   ];
