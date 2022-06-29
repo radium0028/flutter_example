@@ -20,10 +20,10 @@ class _ViewState extends State<GetWidgetPage> {
         title: const Text('GetWidget演示'),
       ),
       body: GridView.count(
-        crossAxisCount: 2, //主轴一行的数量
+        crossAxisCount: 2, // 主轴一行的数量
         mainAxisSpacing: 15, // 主轴每行间距
-        crossAxisSpacing: 15, //交叉轴每行间距
-        childAspectRatio: 1 / 0.3, //宽高比
+        crossAxisSpacing: 15, // 交叉轴每行间距
+        childAspectRatio: 1 / 0.3, // 宽高比
         children: [
           LinkButtonWidget(
             "基本样式",
@@ -94,7 +94,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_APPBAR,
           ),
           LinkButtonWidget(
-            enable: false,
             "评分Rating",
             Routes.GETWIDGET + Routes.GETWIDGET_RATING,
           ),

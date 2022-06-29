@@ -109,6 +109,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_DRAWER,
           page: () => const DrawerPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_RATING,
+          page: () => const RatingPage(),
+        ),
       ],
     ),
   ];

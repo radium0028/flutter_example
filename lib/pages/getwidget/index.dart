@@ -16,3 +16,4 @@ export 'card.dart';
 export 'image.dart';
 export 'accordion.dart';
 export 'drawer.dart';
+export 'rating.dart';
