@@ -141,6 +141,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_SHIMMER,
           page: () => const ShimmerPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_ANIMATION,
+          page: () => const AnimationPage(),
+        ),
       ],
     ),
   ];

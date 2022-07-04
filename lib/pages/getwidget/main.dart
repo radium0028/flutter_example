@@ -116,7 +116,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_SHIMMER,
           ),
           LinkButtonWidget(
-            enable: false,
             "动画Animation",
             Routes.GETWIDGET + Routes.GETWIDGET_ANIMATION,
           ),

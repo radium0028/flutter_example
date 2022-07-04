@@ -24,3 +24,4 @@ export 'loader.dart';
 export 'search.dart';
 export 'progress.dart';
 export 'shimmer.dart';
+export 'animation.dart';

@@ -9,26 +9,13 @@ class MyTitle extends GetView {
 
   @override
   Widget build(BuildContext context) {
-    return GFListTile(
-      titleText: lable,
-      padding: const EdgeInsets.only(
-        bottom: 0,
-        top: 8,
-        left: 8,
-        right: 8,
-      ),
-      margin: const EdgeInsets.only(
-        top: 10,
-        left: 10,
-        right: 10,
-        bottom: 0,
-      ),
-      subTitle: const Text(
-        "———",
-        style: TextStyle(
-          color: GFColors.SUCCESS,
-          fontWeight: FontWeight.w900,
-        ),
+    return Padding(
+      padding: const EdgeInsets.only(left: 15, top: 30, bottom: 20),
+      child: GFTypography(
+        text: lable,
+        type: GFTypographyType.typo5,
+        dividerWidth: 25,
+        dividerColor: const Color(0xFF19CA4B),
       ),
     );
   }
