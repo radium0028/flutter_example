@@ -113,6 +113,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_RATING,
           page: () => const RatingPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_ALERT,
+          page: () => const AlertPage(),
+        ),
       ],
     ),
   ];

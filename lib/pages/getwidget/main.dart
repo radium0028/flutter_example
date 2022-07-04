@@ -84,7 +84,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_TYPOGRAPHY,
           ),
           LinkButtonWidget(
-            enable: false,
             "警告框Alert",
             Routes.GETWIDGET + Routes.GETWIDGET_ALERT,
           ),
