@@ -46,4 +46,5 @@ abstract class Routes {
   static const GETWIDGET_RADIOLIST = '/radiolist';
   static const GETWIDGET_STICKY = '/sticky';
   static const GETWIDGET_TYPOGRAPHY = '/typography';
+  static const GETWIDGET_SEARCH = '/search';
 }

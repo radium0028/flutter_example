@@ -109,6 +109,10 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_PROGRESS,
           ),
           LinkButtonWidget(
+            "搜索框Search",
+            Routes.GETWIDGET + Routes.GETWIDGET_SEARCH,
+          ),
+          LinkButtonWidget(
             enable: false,
             "骨架页Shimmer",
             Routes.GETWIDGET + Routes.GETWIDGET_SHIMMER,

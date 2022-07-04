@@ -129,6 +129,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_LOADER,
           page: () => const LoaderPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_SEARCH,
+          page: () => const SearchPage(),
+        ),
       ],
     ),
   ];
