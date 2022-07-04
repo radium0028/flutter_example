@@ -104,7 +104,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_LOADER,
           ),
           LinkButtonWidget(
-            enable: false,
             "进度器Progress",
             Routes.GETWIDGET + Routes.GETWIDGET_PROGRESS,
           ),

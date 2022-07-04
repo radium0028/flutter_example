@@ -133,6 +133,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_SEARCH,
           page: () => const SearchPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_PROGRESS,
+          page: () => const ProgressPage(),
+        ),
       ],
     ),
   ];
