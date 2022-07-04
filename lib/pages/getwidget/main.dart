@@ -100,7 +100,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_DROPDOWN,
           ),
           LinkButtonWidget(
-            enable: false,
             "加载器Loader",
             Routes.GETWIDGET + Routes.GETWIDGET_LOADER,
           ),

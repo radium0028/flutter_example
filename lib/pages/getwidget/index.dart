@@ -20,3 +20,4 @@ export 'rating.dart';
 export 'alert.dart';
 export 'appbar.dart';
 export 'dropdown.dart';
+export 'loader.dart';

@@ -125,6 +125,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_DROPDOWN,
           page: () => const DropdownPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_LOADER,
+          page: () => const LoaderPage(),
+        ),
       ],
     ),
   ];
