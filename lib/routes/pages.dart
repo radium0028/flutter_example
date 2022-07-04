@@ -137,6 +137,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_PROGRESS,
           page: () => const ProgressPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_SHIMMER,
+          page: () => const ShimmerPage(),
+        ),
       ],
     ),
   ];

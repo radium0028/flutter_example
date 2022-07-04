@@ -23,3 +23,4 @@ export 'dropdown.dart';
 export 'loader.dart';
 export 'search.dart';
 export 'progress.dart';
+export 'shimmer.dart';
