@@ -96,7 +96,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_RATING,
           ),
           LinkButtonWidget(
-            enable: false,
             "下拉列表Dropdown",
             Routes.GETWIDGET + Routes.GETWIDGET_DROPDOWN,
           ),
