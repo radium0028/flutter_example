@@ -88,7 +88,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_ALERT,
           ),
           LinkButtonWidget(
-            enable: false,
             "Appbar",
             Routes.GETWIDGET + Routes.GETWIDGET_APPBAR,
           ),

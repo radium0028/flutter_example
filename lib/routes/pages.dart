@@ -117,6 +117,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_ALERT,
           page: () => const AlertPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_APPBAR,
+          page: () => const AppBarPage(),
+        ),
       ],
     ),
   ];

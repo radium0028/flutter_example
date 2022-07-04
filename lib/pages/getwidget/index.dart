@@ -18,3 +18,4 @@ export 'accordion.dart';
 export 'drawer.dart';
 export 'rating.dart';
 export 'alert.dart';
+export 'appbar.dart';
