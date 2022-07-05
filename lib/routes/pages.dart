@@ -153,6 +153,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_CHECKBOX,
           page: () => const CheckBoxPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_CHECKBOXLISTTILE,
+          page: () => const CheckboxListPage(),
+        ),
       ],
     ),
   ];
