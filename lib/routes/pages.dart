@@ -157,6 +157,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_CHECKBOXLISTTILE,
           page: () => const CheckboxListPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_RADIO,
+          page: () => const RadioPage(),
+        ),
       ],
     ),
   ];

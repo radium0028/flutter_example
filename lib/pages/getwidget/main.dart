@@ -144,14 +144,13 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_INTRODUCTION,
           ),
           LinkButtonWidget(
-            enable: false,
             "单选按钮Radio",
             Routes.GETWIDGET + Routes.GETWIDGET_RADIO,
           ),
           LinkButtonWidget(
             enable: false,
-            "单选列表RadioList Tile",
-            Routes.GETWIDGET + Routes.GETWIDGET_RADIOLIST,
+            "单选列表RadioListTile",
+            Routes.GETWIDGET + Routes.GETWIDGET_RADIOLISTTITLE,
           ),
           LinkButtonWidget(
             enable: false,
