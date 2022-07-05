@@ -165,6 +165,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_RADIOLISTTITLE,
           page: () => const RadioListTitlePage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_MULTISELECT,
+          page: () => const MultiSelectPage(),
+        ),
       ],
     ),
   ];

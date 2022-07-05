@@ -134,7 +134,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_CHECKBOXLISTTILE,
           ),
           LinkButtonWidget(
-            enable: false,
             "多选框Multiselect",
             Routes.GETWIDGET + Routes.GETWIDGET_MULTISELECT,
           ),
