@@ -124,7 +124,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_BORDER,
           ),
           LinkButtonWidget(
-            enable: false,
             "底部滑出Bottomsheet",
             Routes.GETWIDGET + Routes.GETWIDGET_BOTTOMSHEET,
           ),

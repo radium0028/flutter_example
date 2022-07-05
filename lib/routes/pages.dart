@@ -145,6 +145,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_ANIMATION,
           page: () => const AnimationPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_BOTTOMSHEET,
+          page: () => const BottomSheetPage(),
+        ),
       ],
     ),
   ];

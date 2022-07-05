@@ -51,7 +51,7 @@ class BorderPage extends GetView {
                 type: GFBorderType.circle,
                 padding: const EdgeInsets.all(2),
                 child: const GFAvatar(
-                  backgroundImage: AssetImage('assets/2.png'),
+                  backgroundImage: AssetImage('assets/images/cake1.jpg'),
                 ),
               ),
               const Divider(),
