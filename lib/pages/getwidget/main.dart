@@ -128,9 +128,7 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_BOTTOMSHEET,
           ),
           LinkButtonWidget(
-              enable: false,
-              "复选框Checkbox",
-              Routes.GETWIDGET + Routes.GETWIDGET_CHECKBOX),
+              "复选框Checkbox", Routes.GETWIDGET + Routes.GETWIDGET_CHECKBOX),
           LinkButtonWidget(
             enable: false,
             "复选列表CheckboxListTile",

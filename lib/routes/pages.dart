@@ -149,6 +149,10 @@ abstract class AppPages {
           name: Routes.GETWIDGET_BOTTOMSHEET,
           page: () => const BottomSheetPage(),
         ),
+        GetPage(
+          name: Routes.GETWIDGET_CHECKBOX,
+          page: () => const CheckBoxPage(),
+        ),
       ],
     ),
   ];
