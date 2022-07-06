@@ -150,9 +150,8 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_RADIOLISTTITLE,
           ),
           LinkButtonWidget(
-            enable: false,
             "粘性头Sticky Header",
-            Routes.GETWIDGET + Routes.GETWIDGET_STICKY,
+            Routes.GETWIDGET + Routes.GETWIDGET_STICKYHEADER,
           ),
         ],
       ),

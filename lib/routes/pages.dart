@@ -182,6 +182,10 @@ abstract class AppPages {
             ),
           ],
         ),
+        GetPage(
+          name: Routes.GETWIDGET_STICKYHEADER,
+          page: () => const StickyHeaderPage(),
+        ),
       ],
     ),
   ];
