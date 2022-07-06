@@ -42,6 +42,8 @@ abstract class Routes {
   static const GETWIDGET_CHECKBOXLISTTILE = '/checkboxlisttile';
   static const GETWIDGET_MULTISELECT = '/multiselect';
   static const GETWIDGET_INTRODUCTION = '/introduction';
+  static const GETWIDGET_INTRODUCTION_FULL = '/full';
+  static const GETWIDGET_INTRODUCTION_HALF = '/half';
   static const GETWIDGET_RADIO = '/radio';
   static const GETWIDGET_RADIOLISTTITLE = '/radiolist';
   static const GETWIDGET_STICKY = '/sticky';

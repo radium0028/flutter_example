@@ -1,4 +1,3 @@
-import 'package:flutter_example/pages/getwidget/typography.dart';
 import 'package:flutter_example/pages/index.dart';
 import 'package:get/get.dart';
 part './routes.dart';
@@ -168,6 +167,20 @@ abstract class AppPages {
         GetPage(
           name: Routes.GETWIDGET_MULTISELECT,
           page: () => const MultiSelectPage(),
+        ),
+        GetPage(
+          name: Routes.GETWIDGET_INTRODUCTION,
+          page: () => const IntroScreenPage(),
+          children: [
+            GetPage(
+              name: Routes.GETWIDGET_INTRODUCTION_FULL,
+              page: () => const IntroScreenFullPage(),
+            ),
+            GetPage(
+              name: Routes.GETWIDGET_INTRODUCTION_HALF,
+              page: () => const IntroScreenHalfPage(),
+            ),
+          ],
         ),
       ],
     ),

@@ -138,7 +138,6 @@ class _ViewState extends State<GetWidgetPage> {
             Routes.GETWIDGET + Routes.GETWIDGET_MULTISELECT,
           ),
           LinkButtonWidget(
-            enable: false,
             "信息屏Introduction Screen",
             Routes.GETWIDGET + Routes.GETWIDGET_INTRODUCTION,
           ),
