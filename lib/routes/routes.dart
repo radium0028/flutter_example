@@ -12,6 +12,8 @@ abstract class Routes {
   static const SHARED_READ = '/read';
   static const SHARED_SERVICE = '/service';
 
+  static const FLUTTER_EASYREFRESH = '/easyrefresh';
+
   ///GETWIDGET
   static const GETWIDGET = '/getwidget';
   static const GETWIDGET_BASIC = '/basic';

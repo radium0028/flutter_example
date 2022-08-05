@@ -47,7 +47,15 @@ dependencies:
 
   #UI库
   getwidget: ^3.0.1
+
+  #GETX
   get: ^4.6.5
+  #网络
+  dio: ^4.0.6 
+  #下拉刷新
+  easy_refresh: ^3.0.4+1
+
+  flutter_easyrefresh: ^2.2.2
 
 dev_dependencies:
   flutter_test:

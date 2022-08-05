@@ -188,5 +188,9 @@ abstract class AppPages {
         ),
       ],
     ),
+    GetPage(
+      name: Routes.FLUTTER_EASYREFRESH,
+      page: () => const EasyRefreshPage(),
+    ),
   ];
 }

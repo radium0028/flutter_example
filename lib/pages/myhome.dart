@@ -20,6 +20,7 @@ class MyHomePage extends StatelessWidget {
             LinkButtonWidget('Xupdate', Routes.XUPDATE),
             LinkButtonWidget('Shared', Routes.SHARED),
             LinkButtonWidget('GetWidget', Routes.GETWIDGET),
+            LinkButtonWidget("FlutterEasyRefresh", Routes.FLUTTER_EASYREFRESH),
           ],
         ),
       ),

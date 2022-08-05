@@ -1,18 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_example/generated/l10n.dart';
-import 'package:flutter_example/pages/getwidget/main.dart';
-import 'package:flutter_example/pages/index.dart';
-import 'package:flutter_example/pages/intl/format_page.dart';
-import 'package:flutter_example/pages/xupdate/view.dart';
 import 'package:flutter_example/routes/pages.dart';
 import 'package:flutter_example/util/shared_service.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/route_manager.dart';
 import 'package:sentry_flutter/sentry_flutter.dart';
-
-import 'pages/intl/view.dart';
-import 'pages/sentry/view.dart';
-import 'pages/shared_preferences/view.dart';
 
 Future<void> main() async {
   // 初始化插件前需调用初始化代码 runApp()函数之前
