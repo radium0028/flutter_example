@@ -192,5 +192,9 @@ abstract class AppPages {
       name: Routes.FLUTTER_EASYREFRESH,
       page: () => const EasyRefreshPage(),
     ),
+    GetPage(
+      name: Routes.FLUTTER_EASYREFRESH_V3,
+      page: () => const EasyRefreshV3Page(),
+    ),
   ];
 }

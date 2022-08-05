@@ -91,6 +91,8 @@ class EasyRefreshPageState extends State<EasyRefreshPage> {
                 setState(() {
                   _count += 10;
                   _easyRefreshController?.finishLoad(success: true);
+                  //noMore：通知组件没有更多数据了。
+                  //_easyRefreshController?.finishLoad(success: true,noMore: true);
                 });
               }
             });
