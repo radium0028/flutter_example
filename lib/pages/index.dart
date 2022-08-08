@@ -10,4 +10,4 @@ export 'shared_preferences/shared_service_example.dart';
 export 'xupdate/view.dart';
 export 'myhome.dart';
 export 'easyrefresh_v2/view.dart';
-export 'easyrefresh_v3/view.dart';
+export 'easyrefresh_v3/index.dart';

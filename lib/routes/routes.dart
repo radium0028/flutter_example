@@ -14,6 +14,7 @@ abstract class Routes {
 
   static const FLUTTER_EASYREFRESH = '/easyrefresh';
   static const FLUTTER_EASYREFRESH_V3 = '/easyrefresh_v3';
+  static const FLUTTER_EASYREFRESH_V3_LIST = '/easyrefresh_v3_list';
 
   ///GETWIDGET
   static const GETWIDGET = '/getwidget';
