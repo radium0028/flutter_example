@@ -200,5 +200,9 @@ abstract class AppPages {
       name: Routes.FLUTTER_EASYREFRESH_V3_LIST,
       page: () => const RefreshListPage(),
     ),
+    GetPage(
+      name: Routes.CONNECTIVITY,
+      page: () => const ConnectivityPage(),
+    )
   ];
 }

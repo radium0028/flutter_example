@@ -11,3 +11,4 @@ export 'xupdate/view.dart';
 export 'myhome.dart';
 export 'easyrefresh_v2/view.dart';
 export 'easyrefresh_v3/index.dart';
+export 'connectivity/view.dart';

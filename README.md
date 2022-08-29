@@ -9,13 +9,16 @@
 - Intl数字和日期格式化功能
 - Xupdate一键更新
 - sentry 发布后的崩溃异常捕捉
+- EasyRefreshV2 & EasyRefreshV3
+- GetWidget
+- SharedPreferences
+- connectivity_plus
 
 
 ### 运行环境：
 ```
-Flutter 3.0.1
+Flutter 3.0.2
 Dart 2.17.1
-DevTools 2.12.2
 ```
 
 ### 文章介绍查看掘金
