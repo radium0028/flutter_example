@@ -55,4 +55,6 @@ abstract class Routes {
   static const GETWIDGET_STICKYHEADER = '/stickyheader';
   static const GETWIDGET_TYPOGRAPHY = '/typography';
   static const GETWIDGET_SEARCH = '/search';
+  static const WIDGETS = '/widgets';
+  static const WIDGETS_SAFEAREA = '/safeares';
 }

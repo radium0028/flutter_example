@@ -203,6 +203,16 @@ abstract class AppPages {
     GetPage(
       name: Routes.CONNECTIVITY,
       page: () => const ConnectivityPage(),
-    )
+    ),
+    GetPage(
+      name: Routes.WIDGETS,
+      page: () => const IndexPage(),
+      children: [
+        GetPage(
+          name: Routes.WIDGETS_SAFEAREA,
+          page: () => const SafeAreaPage(),
+        ),
+      ],
+    ),
   ];
 }

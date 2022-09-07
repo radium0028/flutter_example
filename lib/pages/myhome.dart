@@ -27,6 +27,8 @@ class MyHomePage extends StatelessWidget {
             LinkButtonWidget("FlutterEasyRefresh-V3-list",
                 Routes.FLUTTER_EASYREFRESH_V3_LIST),
             LinkButtonWidget("Connectivity", Routes.CONNECTIVITY),
+            LinkButtonWidget(
+                "SafeArea", Routes.WIDGETS + Routes.WIDGETS_SAFEAREA),
           ],
         ),
       ),
